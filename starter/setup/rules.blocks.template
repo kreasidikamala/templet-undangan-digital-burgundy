@@ -1,0 +1,44 @@
+    match /invitations/__INVITATION_ID__/wishes/{wishId} {
+      // Ucapan publik, tetapi hanya 30 yang dimuat sekaligus pada halaman.
+      allow get: if true;
+      allow list: if request.query.limit <= 30;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasAll(['authorUid', 'name', 'message', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['authorUid', 'name', 'message', 'createdAt'])
+        && request.resource.data.authorUid == request.auth.uid
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 1
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.message is string
+        && request.resource.data.message.size() >= 1
+        && request.resource.data.message.size() <= 700
+        && request.resource.data.createdAt == request.time;
+      allow update, delete: if false;
+    }
+
+    match /invitations/__INVITATION_ID__/rsvps/{guestId} {
+      // Satu RSVP per identitas anonim di satu browser. Tamu lain tidak bisa
+      // membaca daftar atau dokumen RSVP, termasuk miliknya sendiri via API.
+      function validRsvp() {
+        let data = request.resource.data;
+        return data.keys().hasAll(['ownerUid', 'name', 'attendance', 'count', 'updatedAt'])
+          && data.keys().hasOnly(['ownerUid', 'name', 'attendance', 'count', 'updatedAt'])
+          && data.ownerUid == request.auth.uid
+          && data.name is string
+          && data.name.size() >= 1
+          && data.name.size() <= 80
+          && data.attendance in ['hadir', 'tidak']
+          && data.count is int
+          && ((data.attendance == 'hadir' && data.count >= 1 && data.count <= 4)
+              || (data.attendance == 'tidak' && data.count == 0))
+          && data.updatedAt == request.time;
+      }
+      allow get, list, delete: if false;
+      allow create: if request.auth != null
+        && request.auth.uid == guestId
+        && validRsvp();
+      allow update: if request.auth != null
+        && request.auth.uid == guestId
+        && resource.data.ownerUid == request.auth.uid
+        && validRsvp();
+    }

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4C0911">
+  <meta name="description" content="Undangan pernikahan Alya & Raka, Sabtu 12 Juni 2027.">
+  <title>Alya & Raka — Undangan Pernikahan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/photo-placeholder.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Infant:wght@400;500;600&family=Great+Vibes&family=Pinyon+Script&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/photo-placeholder.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="bootstrap.js" type="module"></script>
+</head>
+<body class="is-covered">
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-envelope" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6M17 2v6M3 10h18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5.3-8 12-8 12S4 15.3 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-3v13"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="18" cy="15" rx="3" ry="2"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m5 12 14 0m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+  </svg>
+
+  <aside class="desktop-portrait" aria-label="Potret Alya dan Raka">
+    <div class="desktop-portrait__copy">
+      <span class="eyebrow">THE WEDDING OF</span>
+      <strong>Alya <em>&amp;</em> Raka</strong>
+      <span class="eyebrow">SABTU, 12 JUNI 2027</span>
+    </div>
+  </aside>
+
+  <div class="site-column">
+    <div class="cover" id="cover" aria-label="Sampul undangan">
+      <div class="cover__content">
+        <p class="eyebrow">THE WEDDING OF</p>
+        <h1>Alya <span>&amp;</span> Raka</h1>
+        <p class="cover__date">SABTU, 12 JUNI 2027</p>
+        <div class="cover__guest">
+          <span>Kepada Yth.</span>
+          <strong id="coverGuest">Tamu Undangan</strong>
+        </div>
+        <button class="outline-pill cover__open" type="button" id="openInvitation"><svg class="icon"><use href="#i-envelope"/></svg> BUKA UNDANGAN</button>
+        <button class="cover__edit" type="button" id="editGuest">✎ &nbsp;Buat tautan nama tamu</button>
+      </div>
+    </div>
+
+    <main id="invitation" inert>
+      <section class="opening section-maroon" id="opening" tabindex="-1" aria-label="Pembuka">
+        <div class="opening__curve opening__curve--one" aria-hidden="true"></div>
+        <div class="opening__curve opening__curve--two" aria-hidden="true"></div>
+        <div class="opening__inside reveal">
+          <div class="monogram monogram--script">A <small>&amp;</small> R</div>
+          <div class="opening__photo frame-photo"><img src="assets/photo-placeholder.svg" alt="Alya dan Raka saling bertatapan" fetchpriority="high"></div>
+          <p class="opening__names">ALYA <span>&amp;</span> RAKA</p>
+          <p class="opening__date">12 / 06 / 2027</p>
+        </div>
+        <a class="scroll-cue" href="#quote"><span class="scroll-cue__mouse">⌄</span><span>Scroll Down</span></a>
+      </section>
+
+      <section class="quote section-ivory" id="quote" aria-label="Kutipan pernikahan">
+        <svg class="wave wave--top" viewBox="0 0 400 54" preserveAspectRatio="none" aria-hidden="true"><path d="M0 13C25 8 34 22 55 15S85 9 104 17s38 1 53-4 38 5 52 9 34-10 53-8 35 12 53 4 31-12 50-7 24 0 35-3V54H0Z" fill="#FFFCF3"/></svg>
+        <div class="quote__card reveal">
+          <div class="quote__inner">
+            <div class="quote__monogram">A <span>&amp;</span> R</div>
+            <div class="heart-rule" aria-hidden="true"><span>♥</span></div>
+            <p class="quote__arabic" lang="ar" dir="rtl"></p>
+            <p class="quote__translation">Bersama, kami memulai kisah baru dengan penuh syukur dan harapan.</p>
+            <p class="quote__source">— Alya & Raka —</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="couple section-maroon" id="couple" aria-label="Mempelai">
+        <div class="couple__oval" aria-hidden="true"></div>
+        <div class="couple__inner">
+          <article class="person reveal">
+            <div class="person__photo"><img src="assets/photo-placeholder.svg" alt="Potret Alya" loading="lazy"></div>
+            <h2 class="script-title">Alya</h2>
+            <p class="person__full">Alya Putri</p>
+            <p class="person__label">Putri dari</p>
+            <p class="person__parents">Nama Ayah &amp; Nama Ibu</p>
+          </article>
+          <div class="couple__amp" aria-hidden="true">&amp;</div>
+          <article class="person reveal">
+            <div class="person__photo"><img src="assets/photo-placeholder.svg" alt="Potret Raka" loading="lazy"></div>
+            <h2 class="script-title">Raka</h2>
+            <p class="person__full">Raka Pratama</p>
+            <p class="person__label">Putra dari</p>
+            <p class="person__parents">Nama Ayah &amp; Nama Ibu</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="events section-maroon" id="events" aria-labelledby="events-title">
+        <div class="events__head reveal">
+          <svg class="icon icon--calendar"><use href="#i-calendar"/></svg>
+          <p class="eyebrow">SAVE THE DATE</p>
+          <h2 class="script-title" id="events-title">Wedding Day</h2>
+          <div class="countdown" id="countdown" aria-label="Hitung mundur hari pernikahan">
+            <div><strong id="countDays">00</strong><span>Hari</span></div>
+            <div><strong id="countHours">00</strong><span>Jam</span></div>
+            <div><strong id="countMinutes">00</strong><span>Menit</span></div>
+            <div><strong id="countSeconds">00</strong><span>Detik</span></div>
+          </div>
+          <button class="light-pill" id="addCalendar" type="button"><svg class="icon"><use href="#i-calendar"/></svg> ADD TO CALENDAR</button>
+        </div>
+
+        <article class="event-card reveal">
+          <div class="event-card__arch"><img src="assets/photo-placeholder.svg" alt="Alya dan Raka dalam potret akad" loading="lazy"></div>
+          <div class="event-card__body">
+            <p class="event-card__ornament">✦ &nbsp; A &amp; R &nbsp; ✦</p>
+            <h3 class="script-title">Akad Nikah</h3>
+            <p class="event-card__day">SABTU</p>
+            <p class="event-card__date">12 / 06 / 2027</p>
+            <p class="event-card__time">09:00 WITA</p>
+            <div class="event-card__rule"></div>
+            <svg class="icon icon--pin"><use href="#i-pin"/></svg>
+            <p class="event-card__venue">Nama Tempat Acara</p>
+            <p class="event-card__address">Nama Tempat Acara</p>
+            <a class="outline-pill" href="#" target="_blank" rel="noopener noreferrer">GOOGLE MAP <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <div class="event-card__arch"><img src="assets/photo-placeholder.svg" alt="Potret Alya dan Raka untuk acara resepsi" loading="lazy"></div>
+          <div class="event-card__body">
+            <p class="event-card__ornament">✦ &nbsp; A &amp; R &nbsp; ✦</p>
+            <h3 class="script-title">Resepsi</h3>
+            <p class="event-card__day">SABTU</p>
+            <p class="event-card__date">12 / 06 / 2027</p>
+            <p class="event-card__time">11:00–14:00 WITA</p>
+            <div class="event-card__rule"></div>
+            <svg class="icon icon--pin"><use href="#i-pin"/></svg>
+            <p class="event-card__venue">Nama Tempat Acara</p>
+            <p class="event-card__address">Nama Tempat Acara</p>
+            <a class="outline-pill" href="#" target="_blank" rel="noopener noreferrer">GOOGLE MAP <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="gallery section-cream" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading reveal"><span class="tiny-ornament">✧</span><h2 class="script-title" id="gallery-title">Our Moments</h2><p>Potret yang selalu ingin kami kenang</p></div>
+        <div class="gallery__grid" id="galleryGrid">
+          <button type="button" data-gallery="0" aria-label="Lihat foto 1 lebih besar"><img src="assets/photo-placeholder.svg" alt="Alya dan Raka di depan cermin" loading="lazy"></button>
+          <button type="button" data-gallery="1" aria-label="Lihat foto 2 lebih besar"><img src="assets/photo-placeholder.svg" alt="Alya dan Raka saling membelakangi" loading="lazy"></button>
+          <button type="button" data-gallery="2" aria-label="Lihat foto 3 lebih besar"><img src="assets/photo-placeholder.svg" alt="Foto kenangan ketiga" loading="lazy"></button>
+          <button type="button" data-gallery="3" aria-label="Lihat foto 4 lebih besar"><img src="assets/photo-placeholder.svg" alt="Alya dan Raka berputar bersama" loading="lazy"></button>
+          <button type="button" data-gallery="4" aria-label="Lihat foto 5 lebih besar"><img src="assets/photo-placeholder.svg" alt="Foto kenangan kelima" loading="lazy"></button>
+        </div>
+      </section>
+
+      <section class="story section-maroon" id="story" aria-labelledby="story-title">
+        <div class="section-heading section-heading--light reveal"><span class="tiny-ornament">✧</span><h2 class="script-title" id="story-title">Love Story</h2></div>
+        <div class="story__arch reveal">
+          <div class="story__line" aria-hidden="true"></div>
+          <article class="story__item"><div class="story__copy"><span class="story__number">01</span><h3>Cerita Kami</h3><p>Tulis cerita kalian di invitation.json.</p></div><span class="story__dot" aria-hidden="true">♥</span></article>
+          <article class="story__item"><div class="story__copy"><span class="story__number">01</span><h3>Cerita Kami</h3><p>Tulis cerita kalian di invitation.json.</p></div><span class="story__dot" aria-hidden="true">♥</span></article>
+          <article class="story__item"><div class="story__copy"><span class="story__number">01</span><h3>Cerita Kami</h3><p>Tulis cerita kalian di invitation.json.</p></div><span class="story__dot" aria-hidden="true">♥</span></article>
+        </div>
+      </section>
+
+      <section class="gift section-maroon" id="gift" aria-labelledby="gift-title">
+        <div class="section-heading section-heading--light reveal"><span class="tiny-ornament">✧</span><h2 class="script-title" id="gift-title">Love Gift</h2><p>Tanpa mengurangi rasa hormat, tanda kasih dapat disampaikan melalui:</p></div>
+        <div class="gift__card reveal">
+          <div class="bank">
+            <img class="bank__logo" src="assets/photo-placeholder.svg" alt="Logo bank pertama" loading="lazy">
+            <p class="bank__label">Bank Pertama · a.n. Nama Pemilik</p>
+            <p class="bank__number">0000000000</p>
+            <button class="small-pill copy-button" type="button" data-copy="0000000000"><svg class="icon"><use href="#i-copy"/></svg> Salin Nomor</button>
+          </div>
+          <div class="gift__divider"><span>♥</span></div>
+          <div class="bank">
+            <div class="bank__placeholder" aria-label="BCA, logo dapat ditambahkan">Bank Kedua</div>
+            <p class="bank__label">Bank Kedua · a.n. Nama Pemilik</p>
+            <p class="bank__number">1111111111</p>
+            <button class="small-pill copy-button" type="button" data-copy="1111111111"><svg class="icon"><use href="#i-copy"/></svg> Salin Nomor</button>
+          </div>
+          <div class="gift__divider"><span>♥</span></div>
+          <div class="gift__address">
+            <p class="eyebrow">ALAMAT KIRIM KADO</p>
+            <p class="gift__recipient">Nama Penerima</p>
+            <p id="giftAddress">[Isi alamat kado]</p>
+            <button class="small-pill copy-button" id="copyAddress" type="button" disabled title="Isi alamat kado dahulu"><svg class="icon"><use href="#i-copy"/></svg> Salin Alamat</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wishes section-cream" id="wishes" aria-labelledby="wishes-title">
+        <div class="section-heading reveal"><span class="tiny-ornament">✧</span><h2 class="script-title" id="wishes-title">Doa &amp; Ucapan</h2><p>Doa restu Anda sangat berarti bagi kami.</p></div>
+        <div class="wishes__content reveal">
+          <div class="rsvp">
+            <h3>Konfirmasi Kehadiran</h3>
+            <p>Mohon kabari kami apakah Anda dapat hadir.</p>
+            <form id="rsvpForm">
+              <label for="rsvpName">Nama tamu</label><input id="rsvpName" name="name" type="text" maxlength="80" autocomplete="name" required>
+              <label for="attendance">Kehadiran</label><select id="attendance" name="attendance" required><option value="">Pilih kehadiran</option><option value="hadir">Insya Allah hadir</option><option value="tidak">Maaf, belum dapat hadir</option></select>
+              <label for="guestCount">Jumlah tamu</label><select id="guestCount" name="count"><option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option></select>
+              <button class="solid-pill" type="submit">Simpan RSVP</button>
+            </form>
+            <p class="form-feedback" id="rsvpFeedback" role="status" aria-live="polite"></p>
+          </div>
+          <div class="wishes__divider" aria-hidden="true">✦</div>
+          <div class="wishes__form-wrap">
+            <h3>Tinggalkan Ucapan</h3>
+            <form id="wishesForm">
+              <label for="wishName">Nama</label><input id="wishName" name="name" type="text" maxlength="80" autocomplete="name" required>
+              <label for="wishMessage">Doa dan pesan</label><textarea id="wishMessage" name="message" rows="4" maxlength="700" placeholder="Tulis doa dan ucapan Anda..." required></textarea>
+              <button class="solid-pill" type="submit">Kirim Ucapan</button>
+            </form>
+            <p class="form-feedback" id="wishFeedback" role="status" aria-live="polite"></p>
+            <p class="storage-note" id="storageNote">Menghubungkan formulir ucapan dan RSVP...</p>
+          </div>
+          <div class="wishes__list-wrap"><h3>Ucapan Tamu</h3><div id="wishesList" class="wishes__list" aria-live="polite"><p class="empty-note">Memuat ucapan tamu...</p></div></div>
+        </div>
+      </section>
+
+      <footer class="closing" id="closing">
+        <div class="closing__content reveal"><p class="closing__thank-you">Terima kasih</p><p>Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada hari istimewa kami. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p><div class="closing__rule"></div><p class="eyebrow">KAMI YANG BERBAHAGIA</p><p class="closing__names">Alya <span>&amp;</span> Raka</p></div>
+        <div class="brand"><span class="brand__mark" aria-hidden="true">k</span><span>Nama Studio</span></div>
+      </footer>
+    </main>
+    <button class="music-control" id="musicControl" type="button" aria-label="Putar musik" aria-pressed="false" hidden><svg class="icon"><use href="#i-music"/></svg><span class="music-control__pause" aria-hidden="true"></span></button>
+  </div>
+
+  <audio id="backgroundMusic" preload="none" loop></audio>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="guest-dialog" id="guestDialog" aria-labelledby="guestDialogTitle">
+    <form method="dialog" class="guest-dialog__inside"><button class="dialog-close" type="submit" aria-label="Tutup"><svg class="icon"><use href="#i-close"/></svg></button><p class="eyebrow">PERSONALISASI UNDANGAN</p><h2 id="guestDialogTitle">Nama tamu</h2><p>Masukkan nama, lalu salin tautan pribadi untuk dibagikan.</p><label for="guestInput">Nama tamu undangan</label><input id="guestInput" maxlength="80" autocomplete="off" placeholder="Contoh: Tamu Undangan"><button class="solid-pill" type="button" id="applyGuest">Terapkan Nama</button><button class="text-link guest-dialog__copy" type="button" id="copyGuestLink"><svg class="icon"><use href="#i-copy"/></svg> Salin Tautan Undangan</button></form>
+  </dialog>
+  <dialog class="lightbox" id="galleryDialog" aria-label="Foto galeri yang diperbesar"><button class="lightbox__close" id="closeGallery" type="button" aria-label="Tutup galeri"><svg class="icon"><use href="#i-close"/></svg></button><button class="lightbox__nav" id="prevGallery" type="button" aria-label="Foto sebelumnya">‹</button><img id="largePhoto" alt=""><button class="lightbox__nav" id="nextGallery" type="button" aria-label="Foto berikutnya">›</button><p id="galleryCaption"></p></dialog>
+</body>
+</html>

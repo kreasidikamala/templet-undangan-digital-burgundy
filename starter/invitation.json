@@ -1,0 +1,61 @@
+{
+  "id": "contoh-alya-raka-2027",
+  "theme": "burgundy",
+  "layout": "split",
+  "guestPlaceholder": "Tamu Undangan",
+  "dateLabel": "SABTU, 12 JUNI 2027",
+  "dateShort": "12 / 06 / 2027",
+  "countdownTo": "2027-06-12T09:00:00+08:00",
+  "couple": {
+    "first": { "short": "Alya", "full": "Alya Putri", "parentsLabel": "Putri dari", "parents": "Nama Ayah & Nama Ibu" },
+    "second": { "short": "Raka", "full": "Raka Pratama", "parentsLabel": "Putra dari", "parents": "Nama Ayah & Nama Ibu" }
+  },
+  "quote": {
+    "arabic": "",
+    "translation": "Bersama, kami memulai kisah baru dengan penuh syukur dan harapan.",
+    "source": "Alya & Raka"
+  },
+  "events": [
+    {
+      "title": "Akad Nikah", "day": "SABTU", "date": "12 / 06 / 2027", "time": "09:00 WITA",
+      "start": "2027-06-12T09:00:00+08:00", "end": "2027-06-12T10:00:00+08:00",
+      "venue": "Nama Tempat Akad", "address": "Alamat lengkap tempat akad", "mapUrl": "",
+      "photo": "assets/photo-placeholder.svg"
+    },
+    {
+      "title": "Resepsi", "day": "SABTU", "date": "12 / 06 / 2027", "time": "11:00–14:00 WITA",
+      "start": "2027-06-12T11:00:00+08:00", "end": "2027-06-12T14:00:00+08:00",
+      "venue": "Nama Tempat Resepsi", "address": "Alamat lengkap tempat resepsi", "mapUrl": "",
+      "photo": "assets/photo-placeholder.svg"
+    }
+  ],
+  "story": [
+    { "title": "Awal Bertemu", "text": "Tulis cerita pertemuan kalian di sini." },
+    { "title": "Menjadi Dekat", "text": "Tulis kenangan yang ingin dibagikan kepada tamu." },
+    { "title": "Menuju Hari Bahagia", "text": "Tulis perjalanan menuju hari pernikahan kalian." }
+  ],
+  "photos": {
+    "cover": "assets/photo-placeholder.svg",
+    "desktop": "assets/photo-placeholder.svg",
+    "opening": "assets/photo-placeholder.svg",
+    "first": "assets/photo-placeholder.svg",
+    "second": "assets/photo-placeholder.svg",
+    "closing": "assets/photo-placeholder.svg"
+  },
+  "gallery": [
+    { "src": "assets/photo-placeholder.svg", "alt": "Foto kenangan pertama" },
+    { "src": "assets/photo-placeholder.svg", "alt": "Foto kenangan kedua" },
+    { "src": "assets/photo-placeholder.svg", "alt": "Foto kenangan ketiga" }
+  ],
+  "music": "",
+  "gifts": {
+    "enabled": false,
+    "banks": [
+      { "name": "Bank Pertama", "owner": "Nama Pemilik", "number": "0000000000", "logo": "" },
+      { "name": "Bank Kedua", "owner": "Nama Pemilik", "number": "1111111111", "logo": "" }
+    ],
+    "address": { "recipient": "", "text": "" }
+  },
+  "closingMessage": "Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada hari istimewa kami.",
+  "brand": { "name": "Nama Studio", "logo": "" }
+}
